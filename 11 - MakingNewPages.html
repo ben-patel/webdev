@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+         
+        /* this parent CSS helps format the blog divs main ares; makes sure they are all within a single div */
+        .parent { 
+            border:none;
+            margin: 1rem;
+            padding: 2rem 2rem;
+            text-align:center;
+            
+        } 
+        
+        /* this child CSS helps format the blog divs symettricaly */
+        .child {
+            display:inline-block;
+            border:none;
+            padding: 2rem 2rem;
+            vertical-align: middle;
+            margin:auto;
+            width: 250px;
+        }   
+
+        /* changes text colour when hovering over a link */
+         a:hover {
+            color: rgb(25, 131, 122) !important;
+        }
+
+        /* sets background of main div */
+        #background {
+            border:2px solid rgb(58, 170, 179);
+            background-image: url(white-overlay.png);
+            background-size: fit;
+            background-repeat:repeat-x;
+            border-right:none;
+            border-left:none;
+            border-bottom:none;
+        }
+
+        /* sets the sides of the border to minimal*/
+        #body {
+            margin:0;
+            padding:0;
+            background-image: url(green-overlay.png);
+            background-size:auto;
+           
+        } 
+
+        /* sets the height of the main div */
+        .main {
+            height: 1064px;
+        }
+
+        /* centers the ghost image link */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 2%;
+        }
+
+        /* increases size of image links when you hover over them */
+        .thumbnail:hover {
+            position:relative;
+            left:98px;
+            width:55px;
+            height:auto;
+            display:block;
+            z-index:999;
+        }
+        
+    </style>
+</head>
+
+<body id= "body">
+
+<div style="background-color:aliceblue;" > <!-- div for the top section -->
+   
+    <div> <!-- div for the dark/light mode buttons -->
+        <span style="float:right">
+        <button onclick='changeBackgroundLight()' style="background-color:transparent; border:none; cursor:pointer; background-repeat:none; " ><img src="star.png" style="position:relative; top:2px; right:15px;"width="17px"></button>
+        <button onclick='changeBackgroundDark()' style="background-color:transparent; border:none; cursor:pointer; background-repeat:none;" ><img src="moon.png" style="position:relative; top:2px; right:15px;" width="15px"></button>
+        
+    </span>
+    </div> 
+   
+    <div> <!-- div for the top right link-->
+        <span style="float:right; ">
+        <a href="contactPage.html" id="textContact" style=" position:relative; right:25px; top:2px; text-decoration:none; color:black; font-weight:bold;">contact</a>
+    </span>
+    </div>
+    
+    <div> <!-- div for the upper left text-->
+        <h2 id="textHeader" style="color:aliceblue">ben patel</h2>
+        <span style="float:left;">
+            <a href="11 - MakingNewPages.html" style="text-decoration:none; width:10px; position:relative; bottom:65px; font-family:monospace; color:rgb(0, 0, 0) "><h2 id="upperText"><p style="position:relative;  left:30px;">ben patel</h2></a>
+        </span>
+    </div>
+       
+    
+</div>
+
+    <div id="background" class=main> <!-- div for main section of website -->
+    <div style="position: relative; top:30px;">
+        <div>
+            <h1 id="textMain" style="font-family:monospace; position:relative; right:75px; top:30px;">hi, i'm ben.</h1>
+        </div>
+
+            <div style="font-family:Verdana;">
+                <h1> </h1>
+                <h1 id="text1" class="element" style=" position:relative; top:30px; left:30px; font-family:monospace;">a 17 year old engineering student at the university of auckland.</h1>
+                <p id="text2" style="font-family:BlinkMacSystemFont; position:relative; top:30px; left:30px;" > this page is just a collection of random thoughts i'm taking you along with.</p>
+                <p id="text3" style=" position:relative; top:30px; left:30px;">enjoy the ride!</p>
+            </div>
+    </div>
+                <div>
+                    <div class="parent" style="position:relative; top:220px;"> <!-- parent div that formats area for child div blogs (PROJECTS/BLOGS)-->
+                         <div> 
+                            <img  id="projects" class="center" style="width:400px;" src="code1.jpg">
+                        </div>
+
+                        <div id="background2" class="child" style=" font-family:rockwell;">
+                            <a href="page1.html"><img id="project2" src="project2.png" width=250px></a>
+                        </div>
+    
+                        <div id="background2" class="child" style=" font-family:rockwell; ">
+                           <a href="StudyPage.html"><img id="project3" src="blank.png" width=210px></a>
+                        </div>
+    
+                        <img  id="blogs" class="center" style="width:400px;" src="blogs2.jpg">
+                
+                        <div id="background2" class="child" style=" font-family:rockwell;">
+                            <a href="page1.html"><img id="blog1" src="shape.png" width=215px></a>
+                        </div>
+
+                        <div id="background2" class="child" style=" font-family:rockwell; ">
+                            <a href="StudyPage.html"><img id="blog2" src="study.png" width=240px></a>
+                        </div>
+
+                        <div id="background2" class="child" style=" font-family:rockwell; ">
+                            <a href="StudyPage.html"><img id="blog3" src="blank.png" width=210px></a>
+                        </div>
+                    </div>  
+                </div>
+
+            <div class="parent" style="position:relative; top:170px;"> <!-- div for the parent block for (APP ICON) links-->
+
+                <p id="text5" style="text-align: center; color:white; font-family:Courier;"></p>
+
+                <div class="child">
+                    <a href="https://www.facebook.com/profile.php?id=100077468311605"><img src="facebook.png" class="thumbnail" width=50px></a>
+                    <h1> </h1>
+                </div>
+
+                <div class="child">
+                    <a href="https://github.com/ben-patel"><img src="github.png" width=40px class="thumbnail"></a>
+                    <h1></h1>
+                </div>
+
+                <div class="child">
+                    <a href="https://www.youtube.com/watch?v=rbE53XUtVw0"><img src="youtube.png"  class="thumbnail" width=50px></a>
+                    <h1> </h1>
+                </div>
+            </div>
+       
+
+    <script> 
+        function changeBackgroundDark() { //dark mode button
+            document.getElementById ("background").style.background = "url('space.png')";
+            document.getElementById("body").style.background = "url('back2.png')";
+            document.getElementById("text1").style.color="white";
+            document.getElementById("textHeader").style.color="#483d8b";
+            document.getElementById("textHeader").style.background="url('483d8b.png')";
+            document.getElementById("text2").style.color="#d3d3d3";
+            document.getElementById("textMain").style.color="white";
+            document.getElementById("text3").style.color="#d3d3d3";
+            document.getElementById("upperText").style.color="white";
+            document.getElementById("textContact").style.color="white";
+            document.getElementById("upperText").style.background = "url('483d8b.png')";
+            document.getElementById("text5").style.color="#483d8b";
+            document.getElementById("projects").src= "backer.jpg";
+            document.getElementById("blogs").src= "blogs1.jpg";
+            document.getElementById("project2").src= "project1Invert.png";
+            document.getElementById("project3").src="blank1.png";
+            document.getElementById("blog1").src= "shape1.png";
+            document.getElementById("blog2").src= "study1.png";
+            document.getElementById("blog3").src= "blank1.png";
+            document.getElementById("textMain").style.transition = "all 1.5s";
+            document.getElementById("text1").style.transition = "all 1.7s";
+            document.getElementById("text2").style.transition = "all 1.7s";
+            document.getElementById("text3").style.transition = "all 1.7s";
+            document.getElementById("text4").style.transition = "all 1.7s";
+        }
+
+        function changeBackgroundLight() { //light mode button
+            window.location.reload();
+        }
+    </script>
+
+</div>
+
+</body>
